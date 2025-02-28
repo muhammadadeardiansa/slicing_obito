@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Obito</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="logo-64.png" type="image/png" sizes="16x16" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="container-fluid border-bottom pt-3 pb-3 bg-white">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="menu d-flex align-items-center">
+          <div class="logo d-flex align-items-center">
+            <div class="image">
+              <img src="logo-64.png" alt="" class="img-fluid" />
+            </div>
+            <a href="#" class="mb-0 ms-2 text-decoration-none text-black"
+              >Obito</a
+            >
+          </div>
+          <div class="list d-flex gap-4 ms-5 me-auto mb-0">
+            <a class="text-decoration-none text-black" href="#">Home</a>
+            <a class="text-decoration-none text-black" href="#">Pricing</a>
+            <a class="text-decoration-none text-black" href="#">Features</a>
+            <a class="text-decoration-none text-black" href="#">Testimonials</a>
+          </div>
+        </div>
+        <div class="button-navbar d-flex align-items-center">
+          <a href="#" class="icon-chat">
+            <img src="device-message.png" alt="" class="img-fluid" />
+          </a>
+          <div class="button d-flex gap-3 align-items-center ms-3">
+            <div class="sign-up">
+              <a
+                href="#"
+                class="text-decoration-none text-black px-4 py-2 border rounded-5"
+                >Sign Up</a
+              >
+            </div>
+            <div class="my-account">
+              <a
+                href="#"
+                class="text-decoration-none text-white px-4 py-2 rounded-5"
+                >My Account</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- close navbar -->
+
+    <!-- content -->
+    <div class="container-fluid m-0 p-0">
+      <div class="row align-items-center g-0">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div class="form me-2 border rounded-4 p-4 bg-white">
+            <p class="text-header fw-bold my-4">Upgrade Your Skills</p>
+            <div class="add-photo my-4 d-flex">
+              <label
+                for="photo-upload"
+                class="photo-label d-flex flex-column align-items-center"
+              >
+                <div
+                  class="circle rounded-circle border d-flex align-items-center justify-content-center"
+                  id="photo-preview"
+                  style="
+                    width: 100px;
+                    height: 100px;
+                    overflow: hidden;
+                    background-color: #f3f3f3;
+                  "
+                >
+                  <img
+                    id="preview-image"
+                    src="upload-icon.png"
+                    alt="Upload Image"
+                    width="50"
+                  />
+                </div>
+              </label>
+              <input
+                type="file"
+                id="photo-upload"
+                class="d-none"
+                accept="image/*"
+                onchange="previewImage(event)"
+              />
+            </div>
+            <div class="input my-4">
+              <p class="m-0">Complete Name</p>
+              <div class="input-group mt-1">
+                <span class="input-group-text bg-white border rounded-start-5">
+                  <img src="profile.png" alt="User" width="20" />
+                </span>
+                <input
+                  itemscope="text"
+                  type="text"
+                  class="form-control border rounded-end-5 py-2 px-4"
+                  placeholder="Type your name"
+                />
+              </div>
+            </div>
+            <div class="input my-4">
+              <p class="m-0">Occupation</p>
+              <div class="input-group mt-1">
+                <span class="input-group-text bg-white border rounded-start-5">
+                  <img src="briefcase.png" alt="User" width="20" />
+                </span>
+                <input
+                  itemscope="text"
+                  type="text"
+                  class="form-control border rounded-end-5 py-2 px-4"
+                  placeholder="Type your occupation"
+                />
+              </div>
+            </div>
+            <div class="input my-4">
+              <p class="m-0">Email Address</p>
+              <div class="input-group mt-1">
+                <span class="input-group-text bg-white border rounded-start-5">
+                  <img src="sms.png" alt="User" width="20" />
+                </span>
+                <input
+                  itemscope="text"
+                  type="text"
+                  class="form-control border rounded-end-5 py-2 px-4"
+                  placeholder="Type your valid email address"
+                />
+              </div>
+            </div>
+            <div class="input my-4">
+              <p class="m-0">Password</p>
+              <div class="input-group mt-1">
+                <span class="input-group-text bg-white border rounded-start-5">
+                  <img src="shield-security.png" alt="User" width="20" />
+                </span>
+                <input
+                  itemscope="text"
+                  type="password"
+                  class="form-control border rounded-end-5 py-2 px-4"
+                  placeholder="Type your password"
+                />
+              </div>
+            </div>
+            <div class="input my-4">
+              <p class="m-0">Confirm Password</p>
+              <div class="input-group mt-1">
+                <span class="input-group-text bg-white border rounded-start-5">
+                  <img src="shield-security.png" alt="User" width="20" />
+                </span>
+                <input
+                  itemscope="text"
+                  type="password"
+                  class="form-control border rounded-end-5 py-2 px-4"
+                  placeholder="Type your password"
+                />
+              </div>
+            </div>
+            <div class="button d-grid w-100 new-account">
+              <a
+                href="#"
+                class="btn text-decoration-none text-white text-center py-2 rounded-5 w-100"
+                style="background-color: #2f6a62"
+              >
+                Create My Account
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="banner.png" alt="" class="img-fluid w-100" />
+        </div>
+      </div>
+    </div>
+    <!-- close content -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function previewImage(event) {
+        const input = event.target;
+        const preview = document.getElementById("preview-image");
+
+        if (input.files && input.files[0]) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            preview.src = e.target.result;
+            preview.style.width = "100%";
+            preview.style.height = "100%";
+            preview.style.objectFit = "cover";
+          };
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+    </script>
+  </body>
+</html>
